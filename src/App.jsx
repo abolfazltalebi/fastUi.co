@@ -1,14 +1,8 @@
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes";
 
-import './App.css'
-import TestComponents from './TestComponents'
-
-function App() {
-
+export default function App() {
   return (
-   <>
-    <TestComponents title="in yek title hast" />
-   </>
+    <RouterProvider router={router} />
   )
 }
-
-export default App
