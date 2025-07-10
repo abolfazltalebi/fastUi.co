@@ -11,3 +11,10 @@ body {
 .font-raleway {
   font-family: 'Raleway', sans-serif;
 }
+
+.bg-heroSection {
+  background-image: url("/assets/images/herosection-background.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

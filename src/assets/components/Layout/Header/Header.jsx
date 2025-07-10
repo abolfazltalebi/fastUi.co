@@ -26,11 +26,11 @@ export default function Header() {
       <div>
         <img src={logo} alt="" />
       </div>
-      <div className="hidden md:flex items-center justify-between gap-24 rounded-[20px] bg-white/60 border border-white px-6 py-4 rounded-xl backdrop-blur-2xl">
+      <div className="hidden md:flex items-center justify-between gap-24 rounded-[20px] bg-white/60 border border-white px-6 py-4 backdrop-blur-2xl">
         <ul className="flex items-center gap-5">
           {NavbarItem.map((Nitem) => {
             return (
-              <li key={Nitem.id} className="duration-300 transition-all group hover:border-b hover:border-[#4E47FF] pb-1">
+              <li key={Nitem.id} className="duration-300 transition-all group hover:border-b hover:border-[#4E47FF] pb-1 capitalize text-base">
                 <Link to={Nitem.src} className="group-hover:text-[#4E47FF]">{Nitem.name}</Link>
               </li>
             );
