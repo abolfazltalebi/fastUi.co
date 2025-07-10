@@ -22,16 +22,16 @@ export default function Header() {
     { id: 4, name: "services", src: "" },
   ];
   return (
-    <header className="flex items-center justify-between mx-4 md:mx-12 py-2 z-10">
+    <header className="flex items-center justify-between mx-4 md:mx-12 py-6 z-10">
       <div>
         <img src={logo} alt="" />
       </div>
-      <div className="hidden md:flex items-center justify-between gap-12 bg-white/50 p-6 rounded-xl backdrop-blur-2xl">
+      <div className="hidden md:flex items-center justify-between gap-24 rounded-[20px] bg-white/60 border border-white px-6 py-4 rounded-xl backdrop-blur-2xl">
         <ul className="flex items-center gap-5">
           {NavbarItem.map((Nitem) => {
             return (
-              <li key={Nitem.id}>
-                <Link to={Nitem.src}>{Nitem.name}</Link>
+              <li key={Nitem.id} className="duration-300 transition-all group hover:border-b hover:border-[#4E47FF] pb-1">
+                <Link to={Nitem.src} className="group-hover:text-[#4E47FF]">{Nitem.name}</Link>
               </li>
             );
           })}
@@ -40,11 +40,11 @@ export default function Header() {
         {/* <Navbar />
         <HeaderButton /> */}
       </div>
-      <div>
-        <Link to="" className="text-sm text-[">
+      <div className="flex items-center gap-4">
+        <Link to="" className="text-sm text-[#8987A1]">
           Sign In
         </Link>
-        <Link to="">
+        <Link to="" className="text-sm text-white bg-[#4E47FF] px-6 py-3 rounded-2xl">
           Sign up
         </Link>
       </div>
